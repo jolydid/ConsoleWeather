@@ -25,7 +25,7 @@ You can clone the repository using Git:
 
 ```shell
 git clone https://github.com/yourusername/weather-app.git
-``` 
+```
 
 ## Configuration
-Edit the **PLACES** list in the **weather_app.py** file to specify the locations for which you want to fetch weather information. You can customize the URL parameters to suit your needs.
+Edit the **PLACES** list in the __weather_app.py__ file to specify the locations for which you want to fetch weather information. You can customize the URL parameters to suit your needs.
