@@ -24,7 +24,7 @@ This Python script fetches current weather information for specified locations u
 You can clone the repository using Git:
 
 ```shell
-git clone https://github.com/yourusername/ConsoleWeather.git
+git clone https://github.com/jolydid/ConsoleWeather.git
 ```
 
 ## Configuration
