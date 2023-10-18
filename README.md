@@ -14,7 +14,7 @@ This Python script fetches current weather information for specified locations u
 1. Make sure you have Python installed.
 2. Clone this repository to your local machine.
 3. Install the required dependencies using `pip install requests` (if not already installed).
-4. Run the script by executing `python weather_app.py`.
+4. Run the script by executing `python main.py`.
 
 ## Prerequisites
 - Python (3.x recommended)
@@ -24,7 +24,7 @@ This Python script fetches current weather information for specified locations u
 You can clone the repository using Git:
 
 ```shell
-git clone https://github.com/yourusername/weather-app.git
+git clone https://github.com/yourusername/ConsoleWeather.git
 ```
 
 ## Configuration
