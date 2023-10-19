@@ -6,6 +6,9 @@ PLACES = ['London', 'SVO', 'Череповец']  # Замените на нуж
 def get_weather(place):
     base_url = 'https://wttr.in/'
     params = {
+        'n': '',    # узкая версия (только день и ночь)
+        'q': '' ,    # тихая версия (без текста "Прогноз погоды")
+        'T': '',    # отключить терминальные последовательности (без цветов)
         'u': 'C',    # Градусы Цельсия
         'lang': 'ru',  # Язык (русский)
     }
@@ -19,5 +22,4 @@ def get_weather(place):
 
 for place in PLACES:
     get_weather(place)
-    
        
