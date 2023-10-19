@@ -1,21 +1,23 @@
 import requests
+import urllib.parse
 
-PLACES = ['London', 'SVO', 'Череповец']
+PLACES = ['London', 'SVO', 'Череповец']  # Замените на нужные места
 
-def get_weather(url):   
-    response = requests.get(url=url)
-    response.raise_for_status()
-    print(response.text)
+def get_weather(place):
+    base_url = 'https://wttr.in/'
+    params = {
+        'u': 'C',    # Градусы Цельсия
+        'lang': 'ru',  # Язык (русский)
+    }
 
-def main():
-    for place in PLACES:
-        try:
-            get_weather(f'https://wttr.in/{place}?nmMTqu&lang=ru')
-        except Exception as e:
-            print(e)
-            
-            
+    response = requests.get(urllib.parse.urljoin(base_url, place), params=params)
+    
+    if response.status_code == 200:
+        print(response.text)
+    else:
+        print("Не удалось получить данные о погоде")
 
-if __name__ == '__main__':
-    main()
-
+for place in PLACES:
+    get_weather(place)
+    
+       
