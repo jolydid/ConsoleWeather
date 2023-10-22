@@ -19,7 +19,10 @@ def get_weather(place):
         print(response.text)
     else:
         print("Не удалось получить данные о погоде")
+def main():
+    for place in PLACES:
+        get_weather(place)
 
-for place in PLACES:
-    get_weather(place)
+if __name__ == "__main__":
+    main()
        
